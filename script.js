@@ -98,7 +98,7 @@ function checkCountryCityData(){
 
 		// If the fetch request fails, this catch code then displays the alert code message inside it.
 	}).catch(() => {
-		alert('Failed to fetch coordinates of ${countrycityName}'); 
+		alert(`Failed to fetch coordinates of ${countrycityName}`); 
 	});
 }
 
