@@ -21,7 +21,7 @@ windspeedValue = document.getElementById('windspeedValue');
 function checkWeatherData(name, lat, lon, country, state){ 
 
 	// This is the URL of OpenWeatherMap API for the fetch request. 
-	let weatherApiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`, 
+	let weatherApiURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`, 
 
 	// Two arrays that contains the days of the week & months of the year which will be used to format the date when displaying weather information.
 	currentDays = [ 'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
@@ -85,7 +85,7 @@ function checkCountryCityData(){
 	if(!countrycityName) return; 
 
 	// This is the URL of Geocoding API to fetch geographic coordinates of the city based on what the user input.
-	let geocodingApiURL = `https://api.openweathermap.org/geo/1.0/direct?q=${countrycityName}&limit=1&appid=${apiKey}`; 
+	let geocodingApiURL = `http://api.openweathermap.org/geo/1.0/direct?q=${countrycityName}&limit=1&appid=${apiKey}`; 
 
 	// This fetch code sends a GET request to the OpenWeatherMap Geocoding API using the URL and the response is converted into a JSON Format. 
 	fetch(geocodingApiURL).then(res => res.json()).then(data => { 
