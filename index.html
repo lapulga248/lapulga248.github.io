@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker Application</title>
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Connection from HTML to CSS -->
+</head>
+<body>
+    <div class="container"> <!-- This container got all the contents of the website -->
+        <div class="header"> <!-- Header contains the Title & Search Bar -->
+            <h1 id="checkers">Weather Checker</h1>
+            <div class="checkWeather_input">
+                <input type="text" name="countrycity" id="countrycity_input" placeholder="Enter a Specific City"/>
+                <button type="button" id="checkweatherBtn">
+                        <i class="fa-regular fa-search"></i>Check Weather
+                </button>
+            </div>
+        </div>
+        <div class="weatherData"> <!-- This contains all related data about the Weather -->
+            <div class="weatherLeft"> <!-- The left section contains the Today Weather -->
+                <div class="cardToday"> <!-- This contains all data related to Today Weather -->
+                    <div class="weatherCurrent">
+                        <div class="todayDetails">
+                            <p>Today</p>
+                            <h2>0&deg;C</h2>
+                            <p>Weather Description</p>
+                        </div>
+                        <div class="weatherIcon">
+                            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="todayBottom"> <!-- The footer of Today Weather -->
+                        <p><i class="fa-light fa-calendar"></i> Date Today</p>
+                        <p><i class="fa-light fa-location-dot"></i> City, Country</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weatherRight"> <!-- The right section contains the Humidity & Windspeed Highlights that comes with Today Weather -->
+                <div class="weatherHighlights"> <!-- This contains all the Highlights of Humidity & Windspeed values -->
+                    <div class="cardHumidity">
+                        <div class="cardHead">
+                            <p>Humidity</p>
+                        </div>
+                        <div class="cardItem">
+                            <i class="fa-light fa-droplet fa-3x"></i>
+                            <h2 id="humidityValue">0%</h2>
+                        </div>
+                    </div>
+                    <div class="cardwindSpeed">
+                        <div class="cardHead">
+                            <p>Wind Speed</p>
+                        </div>
+                        <div class="cardItem">
+                            <i class="fa-light fa-location-arrow fa-3x"></i>
+                            <h2 id="windspeedValue">0m/s</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script> <!-- Connection from HTML to Javascript -->
+</body>
+</html>
