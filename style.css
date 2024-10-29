@@ -123,7 +123,7 @@ input::placeholder {
   	height: 150px;
   	position: relative;
   	top: 160px;
-  	right: 465px;
+  	right: 462px;
   	width: 500px;
   	& p {
   		font-size: 25px;
@@ -144,7 +144,7 @@ input::placeholder {
   	height: 150px;
   	position: relative;
   	top: 330px;
-  	right: 975px;
+  	right: 977px;
   	width: 500px;
   	& p {
   		font-size: 25px;
