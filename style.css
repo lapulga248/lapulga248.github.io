@@ -78,6 +78,9 @@ hr {
 	color: #fff;
 	transition-delay:0.1s;
 }
+input::placeholder {
+	color:#fff;
+}
 .container {
 	position: fixed;
   	width: 600px; 
